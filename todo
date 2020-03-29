@@ -1,0 +1,10 @@
+ToDos:
+    Ldap-authentication:
+        ☐ Create a simple LDAP-connection
+        ☐ Get users from said LDAP-connection
+        ☐ Get specific user and compare password
+            See https://www.php.net/manual/en/function.ldap-compare.php for example (Found out that this maybe not be the best solution)
+            Recommended way are to ldap_bind($dn, $userCN, $password)
+            Returns True at sucess, False at failure
+            You can retrive errorcodes by using ldap_get_option($ds, LDAP_OPT_ERROR_STRING, $error)
+        ☐ Create an authentication provider in Laravel       

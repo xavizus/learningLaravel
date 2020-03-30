@@ -7,6 +7,5 @@ ToDos:
             Recommended way are to ldap_bind($dn, $userCN, $password)
             Returns True at sucess, False at failure
             You can retrive errorcodes by using ldap_get_option($ds, LDAP_OPT_ERROR_STRING, $error)
-        ☐ Create an authentication provider in Laravel       
-Archive:
-    Test To Sign again 2
+        ☐ Create an authentication provider in Laravel
+Test:

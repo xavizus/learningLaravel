@@ -22,6 +22,24 @@
         </div>
 
         <div>@{{ hello }} @{{ world }}</div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Email</th>
+                    <th>CompanyName</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach ($users as $user)
+                    <tr>
+                        <th>{{$user->email}}</th>
+                        <th>{{$user->company->companyName}}</th>
+                    </tr>
+
+                @endforeach
+            </tbody>
+        </table>
     </div>
     </funtest>  
     </div>
